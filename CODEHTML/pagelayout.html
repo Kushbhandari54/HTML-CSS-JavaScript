@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<title>Pagelayout</title>
+	<style>
+
+		* {
+			box-sizing: border-box;
+		  }
+		  body
+		  	{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		
+		
+		header
+			{
+			    background-color:skyblue;
+			    padding:30px;
+		        text-align:center;
+			    font-size:35px;
+			    color:white;
+			  
+			}
+		nav
+			{
+			   float:left;
+			   width:30%;
+			   height:350px;
+			   background:silver;
+			   padding:20px;
+			}
+		nav ul
+			{
+			   list-style-type:none;
+		       padding:0;
+			}
+		
+		article
+			{
+			   float:left;
+			   padding:20px;
+			   width:70%;
+			   background-color:pink;
+			   height:350px;
+			}
+		section:after
+			{
+				content: "";
+				display: table;clear: both;
+			}
+		footer
+			{
+			background-color: #777;
+			padding:10px;
+			text-align:center;
+			color:white;
+			
+			}
+		
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Page Layout</h1>
+	</center>
+	
+	<header>
+		<h2>Cities</h2>
+	</header>
+
+	<section>
+		<nav>
+		 	<ul>
+				<li><a href="iframe.html">London</a></li>
+				<li><a href="htmllist.html">Paris</a></li>
+				<li><a href="assignment.html">Tokoyo</a></li>
+			</ul>
+		</nav>
+	
+		<article>
+			<h1>Londan</h1>
+			<p>Londan is the capital of England.It is the most populous city.</p>
+			<p>Standing on the River Thames, Londan has been a major settlement for two millennia.</p>
+		</article>
+	</section>
+		<footer>
+			<p>This is the footer of this Page</p>
+		</footer>
+	
+</body>
+</html>

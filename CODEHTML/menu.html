@@ -1,0 +1,70 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>MENU</title>
+        <style>
+            .menu ul
+            {
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                overflow: hidden;
+                background-color:rgb(39, 18, 46);
+            }
+            .menu li
+            {
+                float: left;
+            }
+            .menu li a
+            {
+                text-decoration: none;
+                display:inline-block;
+                text-align: center;
+                padding:14px 16px;
+                color:brown;
+            }
+            .menu li a:hover
+            {
+                background-color:blueviolet
+            }
+            .all
+            {
+                background:radial-gradient(red,transparent) ;
+            }
+        </style>
+    </head>
+<body class="all">
+    <center>
+        <h1>Menu using HTML and CSS</h1>
+    </center>
+    
+    <div class="menu">
+        <ul>
+            <li><a href="secondpage.html">Home</a></li>
+            <li><a href="firstpage.html">Contract US</a></li>
+            <li><a href="iframe.html">Services</a></li>
+            <li><a href="pagelayout.html">Products</a></li>
+            <li><a href="Marksheet.html">AnyQuery</a></li>
+        </ul>
+    </div>
+    
+    <div>
+        <center>
+            <h2>Description List Example</h2>
+        </center>
+        <dl>
+                <dt>What is Html?</dt>
+                <dd>HTML is Hyper Text Markup Language. it is used to render data on web page.</dd>
+                <dt>What is CSS?</dt>
+                <dd>CSS is Cascading Style Sheet.It is used for website designing.</dd>
+                <dt>What is JavaScript?</dt>
+                <dd>Javascript is client side scripting language, which run on browser only.</script></dd>
+                <dt>What is JQuery?</dt>
+                <dd>JQuery is library of Javascript, which is used to create web pages dynamic.</dd>
+        </dl>
+    </div>
+    {% block content %}
+    
+    {% endblock %}
+</body>
+</html>

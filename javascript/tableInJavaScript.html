@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to print table number entered by user using JavaScript</title>
+    <style> 
+        span
+        {
+            color:red;
+        }
+    </style>
+    <script>
+        function table1()
+            {
+                var TextBox=document.getElementById("number").value;
+                var firstNumber=parseInt(document.getElementById("number").value);
+            if(TextBox=="") 
+            {
+                alert("Please enter the value in Textbox.");
+            }
+            else
+            {
+                var status=isNaN(firstNumber);
+                if(status)
+                {
+                    alert("Please insert a Number")
+                }
+            else
+            {
+                var result=0;
+                var PrintResult=""
+                for (var i=1; i<=10;i++)
+                    {
+                        result=firstNumber*i;
+                        PrintResult=PrintResult+firstNumber+"<span>X</span>"+i+"="+result+"<br>";
+                        /* document.write(PrintResult)*/ 
+                        document.getElementById("p").innerHTML=PrintResult;
+                    }
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <center><h1>PROGRAM WHICH WILL GIVE THE TABLE OF NUMBER ENTERED BY USER</h1></center>
+    <table>
+        <tr>
+            <td>Enter the Number</td>
+            <td><input type="text" name="number" id="number" placeholder="number"></td>
+
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"  onclick="return(table1())"></td>
+        </tr>
+        <tr>
+        <td><p id="p"></p></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+
+<title>Table with user input number of rows and columb</title> 
+
+<script>
+
+function drawTable()
+{
+row= window.prompt("Input number of rows", 1);
+columb= window.prompt("Input number of columns",1);
+  
+ for(var r=0;r<parseInt(row,10);r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<parseInt(columb,10);c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML="Name-"+r+" Address-"+c; 
+    }
+   }
+}
+</script>
+<style> 
+    body {
+            margin: 10px;
+            background-color:lightsalmon;
+         }
+    input[type=button]
+    {
+        background-color:green;
+        width: 40%;
+        height: 50px;
+    }
+    input[type=button]:hover
+    {
+        color:blue;
+        background-color: red;
+    }
+
+</style>  
+</head>
+<body> 
+<table id="myTable" border="5px solid black"> 
+</table>
+    <form> 
+            <center>
+                <input type="button" onclick="drawTable()" value="Create the table">
+            </center> 
+    </form>
+</body>
+</html>

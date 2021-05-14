@@ -1,0 +1,56 @@
+<!-- #Print array values with odd and even number , even numbers should be printed with color green and odd numbers
+#should be printed with red color
+#array={3,6,5,7,1,10,20,34,57,63}  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Even odd program</title>
+    
+</head>
+<body>
+    <h1 style="color:blue">The array is [3, 6, 5, 7, 1, 10, 20, 34, 57, 63]</h1>
+    <table>
+        <tr>
+            <td><p id="one"></p></td>
+            
+        </tr>
+        <tr>
+            <td><p id="two"></p></td>
+        </tr>
+    
+    
+    </table>
+</body>
+</html>
+<script>
+    var array=[3,6,5,7,1,10,20,34,57,63];
+    var temp1="";
+    var temp2="";
+
+    for(var i=0;i<array.length;i++)
+    {
+        if(array[i]%2==0)
+        {
+            temp1+=array[i]+"is a even number"+"<br>";
+            
+            
+            //document.getElementById("one").innerHTML +=array[i]+" is even number"+"<br>";
+           // document.write("<br>"+"<font color='green'>"+array[i]+" is even number"+"<br>");
+        }
+        else
+        {
+            temp2+=array[i]+"is a odd number"+"<br>";
+            
+            
+            //document.getElementById("two").innerHTML +=array[i]+" is a odd number"+"<br>";
+            //document.write("<br>"+"<font color='red'>"+array[i]+" is a odd number"+"<br>");
+        }
+        
+        document.write(temp1);
+        document.write(temp2);
+
+    }
+    
+    
+    </script> 

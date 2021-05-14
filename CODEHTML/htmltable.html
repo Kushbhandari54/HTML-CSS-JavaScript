@@ -1,0 +1,193 @@
+<!--tomukeshrajput@gmail.com-->
+
+<!doctype html>
+<html>
+<head>
+	<title>HTML Table</title>
+	<style>
+		h1
+		{
+		 color:red
+		}
+		h2
+		{
+		 color:blue
+		}
+		table
+		{
+		   width:80%
+		}
+		table,th,td
+		{
+		   border:2px solid black;
+	           border-collapse:collapse;
+		   text-align:center;
+		}
+		th
+		{
+		  background-color:blue;
+		  color:red;
+		}
+		tr
+		{
+		  color:blue;
+		}
+	</style>
+</head>
+<body>
+<!--12:05 PM 9/1/2020
+ 11:58 AM 9/2/2020-->
+	<center>
+		<h1>HTML TABLE</h1>
+	</center>
+	<h1>Student Registration Data</h1>
+	<table>
+	<tr>
+		<th>Sr.No.</th>
+		<th>Student Id</th>
+		<th>Student Name</th>
+		<th>Course Name</th>
+		<th>College name</th>
+		<th>E-mail Id</th>
+		<th>Contract No.</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Dbit101</td>
+		<td>Kush bhandari</td>
+		<td>Btech cs</td>
+		<td>DBGI</td>
+		<td>kush.18btcse0013@dbgi.com</td>
+		<td>9917306166</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Dbit101</td>
+		<td>Ankit bisht</td>
+		<td>Btech cs</td>
+		<td>DBGI</td>
+		<td>ankit.18btcse0027@dbgi.com</td>
+		<td>9943406166</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Dbit101</td>
+		<td>Akash singh</td>
+		<td>Btech cs</td>
+		<td>DBGI</td>
+		<td>akash.18btcse0039@dbgi.com</td>
+		<td>9917326166</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Dbit101</td>
+		<td>Avinash kumar</td>
+		<td>Btech cs</td>
+		<td>DBGI</td>
+		<td>avinash.18btcse0045@dbgi.com</td>
+		<td>9561730616</td>
+	</tr>
+	</table>
+	<h2>thead,tbody,tfoot tag example</h2>
+	<table style="width:40%;">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>kush</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>Ankit</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>Akash</td>
+				<td>19</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td>57</td>
+			</tr>
+	
+		</tfoot>
+	</table>
+	<h2>rowspan example</h2>
+	<table style="width:40%">
+		<thead>
+			<tr>
+				<th>Name </th>
+				<th>Age</th>
+			</tr>
+			
+		</thead>
+		<tbody>
+			<tr>
+				<td>kush</td>
+				<td rowspan="4">19</td>
+			</tr>
+			<tr>
+				<td>Ankit</td>
+				
+			</tr>
+			<tr>
+				<td>Akash</td>
+				
+			</tr>
+			<tr>
+				<td>Jatin</td>
+				
+			</tr>
+		</tbody>
+	</table>
+	<h2>colspan</h2>
+	<table style="width:40%">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Expenses</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Kush</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td>Akash</td>
+				<td>$40</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2"><b>Total:$60</b></td>
+			</tr>
+		</tfoot>
+	</table>
+	<h2>Header column merge example</h2>
+	<table style="width:40%">
+		<thead>
+			<tr>
+				<th colspan="2">Expense</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Kush</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td>Akash</td>
+				<td>$40</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <centre><h2>Array using JAVASCRIPT </h2></centre>
+    <p id="result"></p>
+
+    <p><h2>Print Array Values using For Loop:</h2></p>
+    <p id="printArray"></p>
+    <p id="printArray2"></p>
+    <p id="printArray3"></p>
+    <p id="printArray4"></p>
+    <p id="printArray5"></p>
+    <p id="printArray6"></p>
+
+    <script>
+        /*Array declaration*/
+        var cars=['z','xyx',44,'p']
+        var arrayLength=cars.length;
+        cars[4]="mukesh";
+        document.getElementById("result").innerHTML=cars+"<br>"+"teh length of array is "+arrayLength+"<br> Array after sorting:"+cars.sort();
+
+        var arrayValue="";
+        /*Print Array Values using for loop*/
+        for(var i=0;i<cars.length;i++)
+        {
+            if(i<cars.length-1)
+            {
+                arrayValue=arrayValue+cars[i]+",";
+            }
+            else
+            {
+            arrayValue=arrayValue+cars[i];
+            }
+}
+        document.getElementById("printArray").innerHTML=arrayValue;
+
+        /* Print Array Values in Unordered List*/
+        cars[cars.length]="DBIT";
+        cars.push("UIT");
+        cars.pop();
+        arrayValue="";
+        arrayValue="<ol>";
+        delete cars[3];
+        for(var i=0;i<cars.length;i++)
+        {
+            arrayValue=arrayValue+"<li>"+cars[i]+"</li>"
+        }
+        arrayValue=arrayValue+"</ol>";
+        document.getElementById("printArray2").innerHTML="<h2>Array Values in ordered List</h2> "+arrayValue;
+   
+        document.getElementById("printArray3").innerHTML="<h2>Display Array values using toString()</h2> "+cars.toString();
+        document.getElementById("printArray4").innerHTML="<h2>Display Array values using join()</h2> "+cars.join(',');
+        document.getElementById("printArray5").innerHTML="<h2>Use of Shift method to remove first element()</h2> "+cars.shift();
+        document.getElementById("printArray6").innerHTML="<h2>Use of unshift to insert value</h2> "+cars.unshift("akash");
+
+    </script>
+</body>
+</html>

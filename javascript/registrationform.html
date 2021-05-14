@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <Script>
+        function validateEmail(emailField){
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    
+            if (reg.test(emailField.value) == false) 
+            {
+                alert('Invalid Email Address');
+                return false;
+            }
+    
+            return true;
+        }
+        function IsMobileNumber(txtMobId) {
+            var mob = /^[1-9]{1}[0-9]{9}$/;
+            var txtMobile = document.getElementById(txtMobId);
+            if (mob.test(txtMobile.value) == false) {
+                alert("Please enter valid mobile number.");
+                txtMobile.focus();
+                return false;
+            }
+            return true;
+        }
+    </Script>
+</head>
+<body>
+    <h1><center> Registration form</center></h1>
+    <center>
+		<form>
+			<table>
+				<tr>	
+					<td>University name</td>
+					<td><input type="text" id="universityname"></td>
+				</tr>
+				<tr>	
+					<td>College name</td>
+					<td><input type="text" id="collegename"></td>
+				</tr>
+				<tr>	
+					<td>Course name</td>
+					<td><input type="text"id="CourseName"></td>
+				</tr>
+				<tr>	
+					<td>Student name</td>
+					<td><input type="text" id="MobileNumber"></td>
+                </tr>
+                <tr>	
+					<td>Email Id</td>
+                    <!-- <td><input type="text" id="emailid">-->
+                    <td><input type="text" onblur="validateEmail(this)"></td> 
+                </tr>
+                <tr>	
+					<td>Mobile Number</td>
+                    <!-- <td><input type="text" id="MobileNumber"></td> -->
+                    <td><input type="text" onblur="IsMobileNumber(this)"></td> 
+				</tr>
+                <tr>	
+					<td>Password</td>
+					<td><input type="text" id="Password"></td>
+                </tr>
+                <tr>	
+					<td>Gender</td>
+                    <td><input type="radio" id="male">male</td>
+                    <td><input type="radio" id="female">female</td>
+                </tr>
+                
+				<tr>
+					<td></td>
+					<td><input type="submit" id="btnSubmit"></td>
+				</tr>
+				
+			</table>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial program using javascript </title>
+    <script>
+        function factorial()
+        {
+            var number=parseInt(document.getElementById("name").value);
+            var fact=1  ;
+            for(var i=1;i<=number;i++)
+            {
+                fact=fact*i;
+            }
+            document.write(fact);
+        }
+
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Factorial Program</h1>
+    </center>
+    <table>
+        <tr>
+            <td><input type="text" id="name" placeholder="number" ></td>
+        </tr>
+        <tr>
+            <td><input type="submit" onclick="return(factorial())"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

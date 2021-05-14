@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <style>
+
+        h1
+        {
+            font-size:40px;
+            color: blue;
+        }
+        button
+        {
+            width: 20%;
+        }
+        button:hover
+        {
+            background-color: brown;
+            box-sizing: border-box;
+            cursor:pointer;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+        <h1>First JavaScript Program</h1>
+    </center>
+    <p id="p1">When you click on button , then text'll will change.</p>
+    <button type="button" onclick='document.getElementById("p1").innerHTML="Text has changed"'>Click Me</button>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Merging (concatenating Arrays)</title>
+</head>
+<body>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+<script>
+       var myGirls=["a","b","c",'g','h','i'];
+       var myBoys=["d","e","f",'j','k','l',];
+       var AfterSlice=myGirls.slice(0,5);
+
+       document.getElementById("5").innerHTML="<h1>Value adding using concating</h1> "+myGirls.concat(myBoys);
+       document.getElementById("6").innerHTML="<h1>Slicing an Array using slice() method</h1> "+AfterSlice;
+       document.getElementById("7").innerHTML="<h1>Display Reverse Array values using reverse()</h1>"+myBoys.reverse();
+    </script> 
+</body>
+</html>

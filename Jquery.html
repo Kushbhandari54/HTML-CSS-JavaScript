@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>JQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script>
+	  $(document).ready(function(){
+		$("#btnSubmit").click(function(){
+		var StudentName=$("#StudentName").val();
+		var StudentId=$("#StudentId").val();
+		var courseName=$("#CourseName").val();
+		var MobileNumber=$("#MobileNumber").val();
+		if(StudentName=="")
+		{
+		   alert("please insert studentname");
+		   return false;
+		}
+		if(StudentId=="")
+		{
+		   alert("please insert studentid")
+		   return false;
+		}
+		if(CourseName=="")
+		{
+		   alert("please insert Coursename")
+		   return false;
+		}
+		if(MobileNumber=="")
+		{
+		   alert("please insert mobile number")
+		   return false;
+		}
+	     })
+	   });
+
+	</script>
+</head>
+</body>
+	<h1><center> Registration form</center></h1>
+		<form>
+			<table>
+				<tr>	
+					<td>Student name</td>
+					<td><input type="text" id="StudentName"></td>
+				</tr>
+				<tr>	
+					<td>Student id</td>
+					<td><input type="text" id="StudentId"></td>
+				</tr>
+				<tr>	
+					<td>Course name</td>
+					<td><input type="text"id="CourseName"></td>
+				</tr>
+				<tr>	
+					<td>Mobile number</td>
+					<td><input type="text" id="MobileNumber"></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" id="btnSubmit"></td>
+				</tr>
+				
+			</table>
+		</form>
+
+</body>
+</html>

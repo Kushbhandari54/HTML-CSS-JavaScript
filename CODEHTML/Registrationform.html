@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        *
+        {box-sizing: border-box;}
+        
+        
+        span{color:red}
+    
+        .container
+        {
+           
+            padding:20px;
+            font-size: 20px;
+            
+        }
+        input[type=text],
+        input[type=password]
+        {
+            width:20%;
+            padding:15px;
+            margin:5px 0 22px 0;
+            display: inline-block;
+            border:none;
+            background-color: aquamarine;
+
+        }
+        input[type=radio],input[type=checkbox]
+        {
+            width:5%;
+            
+        }
+        select
+        {
+            width: 20%;
+            border:none;
+            background-color: aquamarine;
+            display: inline-block;
+            margin:5px 0 22px 0;
+            padding:15px;
+        }
+        input[type=submit]
+        {
+            border:none;
+            background-color: red;
+            cursor: pointer;
+            width:20%;
+            padding:15px;
+            outline: none;
+        }
+        input[type=submit]:hover
+        {
+            opacity:1;
+            background-color: darkblue;
+        }
+        h1
+        {
+            color:red;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 >Registration Form</h1>
+    </center>
+    <div class="container">
+        <form>
+            <label >Admission No. <span>*</span> </label><br>
+            <input type="text" name="Admission No." placeholder="Admission No." required>
+            <br><br>
+            
+            <label>Student Name  <span>*</span></label><br>
+            <input type="text" name="Student Name" placeholder="Student Name" required>
+            <br><br>
+
+            <label>Course Name  <span>*</span></label><br>
+            <!--
+             <input type="text" name="Course Name" placeholder="Course Name">
+            -->
+            <select>
+                <option value="0" text="">Select Course Name</option>
+                <option value="1" text="BTech(CSE)">BTech(CSE)</option>
+                <option value="2" text="BTech(ECE)">BTech(ECE)</option>
+                <option value="3" text="BTech(ME)"> BTech(ME)</option>
+                <option value="4" text="BTech(EEE)">BTech(EEE)</option>
+                <option value="5" text="BTech(CE)">BTech(CE)</option>
+            </select>
+            <br><br>
+
+            <label>Year <span>*</span></label><br>
+            <input type="text" name="Year" placeholder="Year" required>
+            <br><br>
+
+            <label>Semester  <span>*</span></label><br>
+            <select>
+                <option value="0" text="">Select SEMESTER</option>
+                <option>I</option>
+                <option>II</option>
+                <option>III</option>
+                <option>IV</option>
+                <option>V</option>
+                <option>VI</option>
+                <option>VII</option>
+                <option>VIII</option>
+            </select>
+            <!--
+                <input type="text" name="Semester" placeholder="Semester">
+            -->
+            
+            <br><br>
+
+            <label>Gender<span>*</span></label><br>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <br><br>
+
+            <label>Subjects <span>*</span></label><br>
+            <input type="checkbox">DAA
+            <input type="checkbox">CN
+            <input type="checkbox">OS
+            <input type="checkbox">Cyber Security
+            <input type="checkbox">IWT
+            <input type="checkbox">PR
+            <input type="checkbox">DBMS
+             <br><br>
+             
+            <label>Email id  <span>*</span></label><br>
+            <input type="text" name="Email id" placeholder="Email id" required>
+            <br><br>
+
+            <label>Password  <span>*</span></label><br>
+            <input type="Password" name="password" placeholder="Password" required>
+            <br><br>
+
+            <label>Confirm Password  <span>*</span></label><br>
+            <input type="text" name="Confirm Password" placeholder="Confirm Password" required>
+            <br><br>
+
+            <input type="submit" value="Save">
+
+        </form>
+    </div>
+    
+</body>
+</html>

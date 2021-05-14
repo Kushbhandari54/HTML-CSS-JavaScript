@@ -1,0 +1,91 @@
+<!DOCtype html>
+<html>
+<head>
+	<title>Calculator</title>
+
+	<style>
+		body{color:red;
+		background-color: blue;}
+		table{
+			width: 70%;
+		}
+	</style>
+	<script>
+		function AdditionMethod()
+			{
+				var firstNumber=parseInt(document.getElementById("FirstNo").value);
+				var secondNumber=parseInt(document.getElementById("SecondNo").value);
+				
+				var result=firstNumber+secondNumber;
+				document.getElementById("result").innerHTML="Addition of Two No. is:"+result;
+	
+				document.getElementById("FirstNo").value="";
+				document.getElementById("SecondNo").value="";
+			
+				document.getElementById("result").style.color="red";
+
+			}
+		function SubtractionMethod()
+			{
+				var firstNumber=parseInt(document.getElementById("FirstNo").value);
+				var secondNumber=parseInt(document.getElementById("SecondNo").value);
+				
+				var result=firstNumber-secondNumber;
+				document.getElementById("result").innerHTML="Subtraction of Two No. is:"+result;
+
+			}
+		function DivisionMethod()
+			{
+				var firstNumber=parseInt(document.getElementById("FirstNo").value);
+				var secondNumber=parseInt(document.getElementById("SecondNo").value);
+				
+				var result=firstNumber/secondNumber;
+				document.getElementById("result").innerHTML="Division of Two No. is:"+result;
+
+			}
+		function MultiplyMethod()
+			{
+				var firstNumber=parseInt(document.getElementById("FirstNo").value);
+				var secondNumber=parseInt(document.getElementById("SecondNo").value);
+				
+				var result=firstNumber*secondNumber;
+				document.getElementById("result").innerHTML="Multiply of Two No. is:"+result;
+
+			}
+
+			
+	</script>
+</head>
+<body>
+	<center>
+		<h1>Calculator using JAVASCRIPT</h1>
+	
+
+	<table>
+		<tr>
+			<td>First Number</td>
+			<td><input type="text" name="firstNumber" id="FirstNo"></td>
+		</tr>
+
+		<tr>
+			<td>Second Number</td>
+			<td><input type="text" name="SecondNumber" id="SecondNo"></td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>
+			<input type="submit" value="Addition" onclick="return(AdditionMethod())"><br><br>
+			<input type="submit" value="Subtraction" onclick="return(SubtractionMethod())"><br><br>
+			<input type="submit" value="Division" onclick="return(DivisionMethod())"><br><br>
+			<input type="submit" value="Multiply" onclick="return(MultiplyMethod())"><br><br>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><p id="result"></p></td>
+		</tr>
+	</table>
+	</center>
+</body>
+</html>
